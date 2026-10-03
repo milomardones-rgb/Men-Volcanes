@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizzería Volcanes · Menú</title>
+<style>
+:root{--bg:#0b0e0b;--card:#151a15;--line:#2a302a;--text:#f5f6f3;--muted:#aab2a7;--green:#79e052;--red:#e85b51}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at top,#202820 0,#0b0e0b 48%,#070907 100%);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+.wrap{max-width:1080px;margin:auto;padding:22px 14px 35px}
+header{text-align:center;padding:8px 8px 22px}
+.kicker{font-size:12px;letter-spacing:6px;color:#cbd1c8;font-weight:800}
+.brand{font-size:48px;line-height:1;font-weight:900;letter-spacing:5px}
+.place{font-size:11px;letter-spacing:5px;color:var(--green);margin-top:8px}
+.intro{max-width:720px;margin:16px auto 0;color:var(--muted);font-size:11px;line-height:1.6;letter-spacing:.5px}
+.card{background:rgba(21,26,21,.96);border:1px solid var(--line);border-radius:24px;padding:20px;box-shadow:0 15px 45px rgba(0,0,0,.28)}
+.promo{border:1px solid var(--red);border-radius:17px;text-align:center;padding:16px 10px;margin-bottom:14px;background:linear-gradient(90deg,rgba(232,91,81,.10),rgba(232,91,81,.02))}
+.promo small{display:block;color:#ff958e;font-size:10px;letter-spacing:3px;font-weight:900}
+.promo strong{display:block;font-size:25px;margin-top:6px}
+.cash-note{text-align:center;color:var(--green);font-size:11px;font-weight:900;letter-spacing:1px;margin:0 0 24px}
+.title{text-align:center;font-size:18px;font-weight:900;letter-spacing:4px;margin:24px 0 13px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+.pizza{border:1px solid var(--line);border-radius:15px;padding:14px;display:flex;justify-content:space-between;gap:12px;background:linear-gradient(135deg,rgba(255,255,255,.025),rgba(255,255,255,.008))}
+.pizza.featured{border-color:rgba(121,224,82,.65);background:linear-gradient(135deg,rgba(121,224,82,.09),rgba(121,224,82,.015))}
+.name{font-size:14px;font-weight:900;letter-spacing:1.5px}
+.featured .name{color:var(--green)}
+.desc{font-size:11px;color:var(--muted);line-height:1.35;margin-top:6px}
+.prices{text-align:right;white-space:nowrap}
+.regular{font-size:10px;color:#7d857b;text-decoration:line-through}
+.cash{font-size:17px;font-weight:900;color:var(--green);margin-top:3px}
+.cash-label{font-size:8px;color:#aab2a7;letter-spacing:.7px}
+.separator{height:1px;background:var(--line);margin:30px 0 4px}
+footer{text-align:center;margin-top:22px;color:#9ba39a;font-size:11px;line-height:1.8}
+footer a{color:var(--text);text-decoration:none}
+.footer-cta{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:8px}
+@media(max-width:680px){.wrap{padding:16px 9px 25px}.brand{font-size:35px}.card{padding:14px;border-radius:19px}.grid{grid-template-columns:1fr}.promo strong{font-size:21px}}
+
+.extras{margin-top:12px;padding:14px 4px 2px;text-align:center;border-top:1px solid var(--line)}
+.extras-badge{display:inline-block;background:var(--red);color:white;border-radius:999px;padding:5px 11px;font-size:9px;font-weight:900;letter-spacing:1.3px}
+.extras h2{font-size:17px;letter-spacing:1.5px;margin:8px 0 2px}
+.extras-sub{color:var(--muted);font-size:8px;margin:0 0 9px;letter-spacing:1px}
+.extra-list{display:grid;grid-template-columns:repeat(3,1fr);gap:5px 7px;text-align:left}
+.extra-line{min-height:25px;padding:5px 7px;border:1px solid var(--line);border-radius:7px;background:rgba(255,255,255,.018);display:flex;align-items:center;justify-content:space-between;gap:5px}
+.extra-line strong{font-size:9px}
+.extra-line span{color:var(--green);font-size:8px;font-weight:900;white-space:nowrap}
+.extra-line.special{border-color:rgba(121,224,82,.55);background:rgba(121,224,82,.06)}
+@media(max-width:680px){.extra-list{grid-template-columns:repeat(2,1fr)}.extra-line{padding:5px 6px}.extra-line strong{font-size:8.5px}.extra-line span{font-size:7.5px}}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+  <div class="kicker">PIZZERÍA</div>
+  <div class="brand">VOLCANES</div>
+  <div class="place">FRUTILLAR</div>
+  <div class="intro">TODAS VIENEN CON BASE DE SALSA DE TOMATES, QUESO Y ORÉGANO</div>
+</header>
+
+<main class="card">
+  <div class="promo">
+    <small>PROMOCIÓN</small>
+    <strong>2 PIZZAS MEDIANAS · DESDE $17.500</strong>
+  </div>
+  <div class="cash-note">💚 PRECIO ESPECIAL PAGANDO EN EFECTIVO O TRANSFERENCIA</div>
+
+  <div class="title">MEDIANAS · 32 CM</div>
+  <div class="grid">
+    <div class="pizza"><div><div class="name">MARGARITA</div><div class="desc">Tomate, albahaca y oliva.</div></div><div class="prices"><div class="regular">$9.500</div><div class="cash">$9.300</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">CALABRESA</div><div class="desc">Salame, tomates y aceitunas.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">HAWAIANA</div><div class="desc">Jamón y piña.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">NAPOLITANA</div><div class="desc">Jamón, tomates y aceitunas.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">MUZZA</div><div class="desc">Mozzarella x 2, orégano y oliva.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">CAPRICHOSA</div><div class="desc">Jamón, salame.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">VEGETARIANA</div><div class="desc">3 vegetales a elección.</div></div><div class="prices"><div class="regular">$10.000</div><div class="cash">$9.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">POLLONA</div><div class="desc">Pollo, choclo, champiñón.</div></div><div class="prices"><div class="regular">$10.500</div><div class="cash">$10.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">POLLO BBQ</div><div class="desc">Pollo barbecue, cebolla y champiñón.</div></div><div class="prices"><div class="regular">$10.500</div><div class="cash">$10.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">SALTEÑA</div><div class="desc">Jamón crudo, rúcula.</div></div><div class="prices"><div class="regular">$10.500</div><div class="cash">$10.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">RÚSTICA</div><div class="desc">Tocino, cebolla morada, pepinillo.</div></div><div class="prices"><div class="regular">$10.500</div><div class="cash">$10.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">DOBLE SALAME</div><div class="desc">Salame x 2.</div></div><div class="prices"><div class="regular">$10.500</div><div class="cash">$10.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">DOBLE PEPPERONI</div><div class="desc">Pepperoni americano x 2.</div></div><div class="prices"><div class="regular">$11.000</div><div class="cash">$10.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">RES MECHADA</div><div class="desc">Carne mechada, morrón, choclo.</div></div><div class="prices"><div class="regular">$11.500</div><div class="cash">$11.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+  </div>
+
+  <div class="separator"></div>
+  <div class="title">FAMILIARES · 36 CM</div>
+  <div class="grid">
+    <div class="pizza"><div><div class="name">MARGARITA</div><div class="desc">Tomate, albahaca y oliva.</div></div><div class="prices"><div class="regular">$11.500</div><div class="cash">$11.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">CALABRESA</div><div class="desc">Salame, tomates y aceitunas.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">HAWAIANA</div><div class="desc">Jamón y piña.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">NAPOLITANA</div><div class="desc">Jamón, tomates y aceitunas.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">MUZZA</div><div class="desc">Mozzarella x 2, orégano y oliva.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">CAPRICHOSA</div><div class="desc">Jamón, salame.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">VEGETARIANA</div><div class="desc">3 vegetales a elección.</div></div><div class="prices"><div class="regular">$12.000</div><div class="cash">$11.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">POLLONA</div><div class="desc">Pollo, choclo, champiñón.</div></div><div class="prices"><div class="regular">$12.500</div><div class="cash">$12.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">POLLO BBQ</div><div class="desc">Pollo barbecue, cebolla y champiñón.</div></div><div class="prices"><div class="regular">$12.500</div><div class="cash">$12.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">SALTEÑA</div><div class="desc">Jamón crudo, rúcula.</div></div><div class="prices"><div class="regular">$12.500</div><div class="cash">$12.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">RÚSTICA</div><div class="desc">Tocino, cebolla morada, pepinillo.</div></div><div class="prices"><div class="regular">$12.500</div><div class="cash">$12.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">DOBLE SALAME</div><div class="desc">Salame x 2.</div></div><div class="prices"><div class="regular">$12.500</div><div class="cash">$12.200</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">DOBLE PEPPERONI</div><div class="desc">Pepperoni americano x 2.</div></div><div class="prices"><div class="regular">$13.000</div><div class="cash">$12.700</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+    <div class="pizza"><div><div class="name">RES MECHADA</div><div class="desc">Carne mechada, morrón, choclo.</div></div><div class="prices"><div class="regular">$14.000</div><div class="cash">$13.600</div><div class="cash-label">EFECTIVO / TRANSF.</div></div></div>
+  </div>
+
+  <div class="separator"></div>
+  <section class="extras">
+    <div class="extras-badge">🍕 HAZLA A TU GUSTO</div>
+    <h2>AGREGA TU INGREDIENTE FAVORITO</h2>
+    <p class="extras-sub">MEDIANA / FAMILIAR</p>
+    <div class="extra-list">
+      <div class="extra-line special"><strong>🧀 Mozzarella</strong><span>$2.000 / $3.000</span></div>
+      <div class="extra-line special"><strong>🍤 Camarón</strong><span>$3.500 / $4.000</span></div>
+      <div class="extra-line"><strong>Jamón crudo</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Mechada</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Pollo</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Tocino</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Salame</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Jamón</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Pepperoni</strong><span>$1.500 / $2.500</span></div>
+      <div class="extra-line"><strong>Aceituna</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Cebolla</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Morrón</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Choclo</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Champiñón</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Tomate</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Piña</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Pepinillos</strong><span>$1.000 / $1.500</span></div>
+      <div class="extra-line"><strong>Rúcula</strong><span>$1.000 / $1.500</span></div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <div>Simón Bolívar 144, Frutillar</div>
+  <div class="footer-cta">
+    <a href="https://www.google.com/maps/search/?api=1&query=Simon+Bolivar+144%2C+Frutillar%2C+Los+Lagos%2C+Chile">📍 Cómo llegar</a>
+    <a href="https://wa.me/56949294956">💬 WhatsApp +56 9 4929 4956</a>
+  </div>
+</footer>
+</div>
+</body>
+</html>
