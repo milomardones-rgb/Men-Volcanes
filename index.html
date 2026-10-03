@@ -48,12 +48,12 @@ footer a{color:var(--text);text-decoration:none}
 @media(max-width:680px){.extra-list{grid-template-columns:repeat(2,1fr)}.extra-line{padding:5px 6px}.extra-line strong{font-size:8.5px}.extra-line span{font-size:7.5px}}
 
 .pizza{display:grid;grid-template-columns:112px minmax(0,1fr) auto;align-items:center;gap:12px}
-.pizza-photo{width:112px;height:82px;object-fit:contain;border-radius:10px;display:block;background:#0b0e0b}
+.pizza-photo{width:112px;height:82px;object-fit:cover;border-radius:10px;display:block;background:#0b0e0b}
 .pizza.featured{border-color:var(--line);background:linear-gradient(135deg,rgba(255,255,255,.025),rgba(255,255,255,.008))}
 .featured .name{color:var(--text)}
 @media(max-width:680px){
   .pizza{grid-template-columns:92px minmax(0,1fr) auto;gap:9px;padding:10px}
-  .pizza-photo{width:92px;height:70px;object-fit:contain;background:#0b0e0b}
+  .pizza-photo{width:92px;height:70px;object-fit:cover;background:#0b0e0b}
   .name{font-size:12px;letter-spacing:1px}
   .desc{font-size:10px}
   .cash{font-size:15px}
